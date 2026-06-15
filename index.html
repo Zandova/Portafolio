@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio - Desarrollador Full Stack</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Mi Portafolio</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link"><i class="fas fa-home"></i> Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link"><i class="fas fa-user-alt"></i> Sobre mí</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link"><i class="fas fa-wrench"></i> Habilidades</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link"><i class="far fa-folder"></i> Proyectos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link"><i class="far fa-address-book"></i> Contacto</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <!-- Canvas del fondo binario -->
+        <canvas id="binary-bg"></canvas>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Hola, soy</span><br>
+                    <span class="hero-name">Diego Armando Sandoval Marquez</span>
+                </h1>
+                <p class="hero-subtitle">Desarrollador Full Stack apasionado por crear soluciones innovadoras y escalables.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary"><i class="far fa-folder-open"></i>  Ver Proyectos</a>
+                    <a href="#contact" class="btn btn-secondary"><i class="far fa-paper-plane"></i>  Contáctame</a>
+                </div>
+            </div>
+            <div class="hero-avatar"><img src="./img/avatar3.png" alt=""></div>
+            <div class="hero-image">
+                <div class="floating-card">
+                    <i class="fab fa-java"></i>
+                </div>
+                <div class="floating-card delay-1">
+                    <i class="fab fa-node-js"></i>
+                </div>
+                <div class="floating-card delay-2">
+                    <i class="fa fa-database"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section --> 
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre mí</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Desarrollador Full Stack</h3>
+                    <p>Soy un desarrollador apasionado con experiencia en tecnologías modernas del frontend y backend. Me especializo en crear aplicaciones web escalables, mantenibles y con excelente experiencia de usuario.</p>
+                    <p>Actualmente trabajo con Spring Boot, React, Node.js y bases de datos modernas. Siempre estoy aprendiendo nuevas tecnologías y mejorando mis habilidades.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h4>3+</h4>
+                            <p>Años de experiencia</p>
+                        </div>
+                        <div class="stat">
+                            <h4>20+</h4>
+                            <p>Proyectos completados</p>
+                        </div>
+                        <div class="stat">
+                            <h4>5+</h4>
+                            <p>Tecnologías principales</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <img class="image-placeholder" alt="fotoPerfil" src="./img/FotoPerfil.jpeg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Habilidades</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-items">
+                        <span data-skill="React"><i class="devicon-react-original"></i> React</span>
+                        <span data-skill="JavaScript"><i class="devicon-javascript-plain"></i> JavaScript</span>
+                        <span data-skill="HTML/CSS"><i class="devicon-html5-plain"></i> HTML/CSS</span>
+                        <span data-skill="TypeScript"><i class="devicon-typescript-plain"></i> TypeScript</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skill-items">
+                        <span data-skill="Spring Boot"><i class="devicon-spring-plain"></i> Spring Boot</span>
+                        <span data-skill="Node.js"><i class="devicon-nodejs-plain"></i> Node.js</span>
+                        <span data-skill="Python"><i class="devicon-python-plain"></i> Python</span>
+                        <span data-skill="Java"><i class="devicon-java-plain"></i> Java</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Base de Datos</h3>
+                    <div class="skill-items">
+                        <span data-skill="PostgreSQL"><i class="devicon-postgresql-plain"></i> PostgreSQL</span>
+                        <span data-skill="MongoDB"><i class="devicon-mongodb-plain"></i> MongoDB</span>
+                        <span data-skill="MySQL"><i class="devicon-mysql-plain"></i> MySQL</span>
+                        <span data-skill="Redis"><i class="devicon-redis-plain"></i> Redis</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Herramientas</h3>
+                    <div class="skill-items">
+                        <span data-skill="Docker"><i class="devicon-docker-plain"></i> Docker</span>
+                        <span data-skill="Git"><i class="devicon-git-plain"></i> Git</span>
+                        <span data-skill="AWS"><i class="devicon-amazonwebservices-plain-wordmark"></i> AWS</span>
+                        <span data-skill="Jenkins"><i class="devicon-jenkins-plain"></i> Jenkins</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Proyectos Destacados</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Xbox Timer  🎮</h3>
+                        <p>Plataforma que trabaja de forma local para el control de tiempo en una Sala de Videojuegos, gererando un archivo pdf con las ganancias totales y registros.</p>
+                        <div class="project-tech">
+                            <span>Html</span>
+                            <span>Css</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <div class="projecta">
+                                <a href="https://github.com/Zandova/xbox-timer.git" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <button onclick="abrirModal()">Ver proyecto</button>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Yesi Nails 💅</h3>
+                        <p>Aplicacion Web para apartar y registrar citas, utilizando WhatsApp para respuesta de la cita. Registrando en un archivo los datos de la cita y algunos extra.</p>
+                        <div class="project-tech">
+                            <span>Node.js</span>
+                            <span>React</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <div class="projecta">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <button>Ver proyecto</button>
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Analytics Dashboard</h3>
+                        <p>Dashboard analítico con visualizaciones en tiempo real usando D3.js y Spring Boot con WebSockets.</p><br>
+                        <div class="project-tech">
+                            <span>Spring Boot</span>
+                            <span>D3.js</span>
+                            <span>WebSockets</span>
+                        </div>
+                        <div class="project-links">
+                            <div class="projecta">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>  
+                            <button>Ver proyecto</button> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="miModal" style="display:none;">
+            <div class="modal-box">
+                <p>¡Hola! Soy el modal</p>
+                <button onclick="cerrarModal()">Cerrar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contáctame</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>da155849@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <h3>LinkedIn</h3>
+                        <p>/in/tunombre</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <h3>GitHub</h3>
+                        <p>github.com/tunombre</p>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Tu email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" placeholder="Tu mensaje" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Diego Armando Sandoval. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="binary-bg.js"></script>
+</body>
+</html>
