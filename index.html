@@ -98,7 +98,7 @@
                 </div>
                 <div class="about-image">
                     <div class="image-placeholder">
-                        <img class="image-placeholder" alt="fotoPerfil" src="./img/FotoPerfil.jpeg">
+                        <img class="image-placeholder" alt="fotoPerfil" src="./img/FotoPerfil.jpg">
                     </div>
                 </div>
             </div>
@@ -154,7 +154,7 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
-                        <i class="fas fa-laptop-code"></i>
+                        <img src="./img/xboxApp.png" alt="">
                     </div>
                     <div class="project-content">
                         <h3>Xbox Timer  🎮</h3>
@@ -169,14 +169,14 @@
                                 <a href="https://github.com/Zandova/xbox-timer.git" class="project-link"><i class="fab fa-github"></i></a>
                                 <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
                             </div>
-                            <button onclick="abrirModal()">Ver proyecto</button>
+                            <button onclick="abrirModal('xboxTimer')">Ver proyecto</button>
                             
                         </div>
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-image">
-                        <i class="fas fa-mobile-alt"></i>
+                        <img src="./img/YesiNailsApp.png" alt="YesiNailsApp.com">
                     </div>
                     <div class="project-content">
                         <h3>Yesi Nails 💅</h3>
@@ -188,10 +188,10 @@
                         </div>
                         <div class="project-links">
                             <div class="projecta">
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="https://github.com/Zandova" class="project-link"><i class="fab fa-github"></i></a>
                                 <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
                             </div>
-                            <button>Ver proyecto</button>
+                            <button onclick="abrirModal('yesiNails')">Ver proyecto</button>
     
                         </div>
                     </div>
@@ -217,14 +217,80 @@
                         </div>
                     </div>
                 </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./img/CriptoApp.png" alt="CriptosApp">
+                    </div>
+                    <div class="project-content">
+                        <h3>CriptosApp  🎮</h3>
+                        <p>Cryptocurrency tracking app built with React, TypeScript, Vite and Tailwind CSS. Data powered by CoinGecko API. </p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Vite</span>
+                            <span>Typescript</span>
+                        </div>
+                        <div class="project-links">
+                            <div class="projecta">
+                                <a href="https://github.com/Zandova/CriptosApp" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <button onclick="abrirModal('criptosApp')">Ver proyecto</button>
+                            
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div id="miModal" style="display:none;">
-            <div class="modal-box">
-                <p>¡Hola! Soy el modal</p>
-                <button onclick="cerrarModal()">Cerrar</button>
+        <div id="miModal" class="modal-overlay">
+    <div class="modal-box">
+        <button class="modal-close" onclick="cerrarModal()"><i class="fas fa-times"></i></button>
+
+        <!-- Slider de imágenes -->
+        <div class="modal-slider">
+            <div class="slider-track" id="sliderTrack">
+                <img src="./img/xboxApp.png" alt="Screenshot 1">
+                <img src="./img/xboxApp2.png" alt="Screenshot 2">
+                <img src="./img/xboxApp3.png" alt="Screenshot 3">
+            </div>
+            <button class="slider-arrow prev" onclick="moverSlider(-1)"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-arrow next" onclick="moverSlider(1)"><i class="fas fa-chevron-right"></i></button>
+            <div class="slider-dots" id="sliderDots"></div>
+        </div>
+
+        <!-- Contenido -->
+        <div class="modal-content">
+            <h3 id="modalTitle"></h3>
+
+            <div class="modal-tech" id="modalTech">
+                <span>Html</span>
+                <span>Css</span>
+                <span>JavaScript</span>
+            </div>
+
+            <p class="modal-description" id="modalDescription">
+                Plataforma que trabaja de forma local para el control de tiempo en una Sala de Videojuegos, generando un archivo PDF con las ganancias totales y registros.
+            </p>
+
+            <div class="modal-features">
+                <h4>Características principales</h4>
+                <ul id="modalFeaturesList">
+                    <li><i class="fas fa-check"></i> Control de tiempo por estación en tiempo real</li>
+                    <li><i class="fas fa-check"></i> Generación automática de reportes en PDF</li>
+                    <li><i class="fas fa-check"></i> Registro histórico de ganancias</li>
+                </ul>
+            </div>
+
+            <div class="modal-actions">
+                <a href="https://github.com/Zandova/xbox-timer.git" target="_blank" class="modal-btn btn-github">
+                    <i class="fab fa-github"></i> Ver código
+                </a>
+                <a href="#" target="_blank" class="modal-btn btn-demo">
+                    <i class="fas fa-external-link-alt"></i> Ver demo
+                </a>
             </div>
         </div>
+    </div>
+</div>
     </section>
 
     <!-- Contact Section -->
